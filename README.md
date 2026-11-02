@@ -1,6 +1,6 @@
 # pq_panjer
 
-Código de apoio ao artigo "Atuária para quants, parte 2: a largura da grade decide se Panjer bate o Monte Carlo", da publicação [Pílulas de Quant](https://pilulasdequant.com.br).
+Código de apoio ao artigo "Atuária para quants, parte 2: quando a recursão de Panjer vence o Monte Carlo, e quando não", da publicação [Pílulas de Quant](https://pilulasdequant.com.br).
 
 O repositório calcula a distribuição de perdas agregadas de uma carteira de crédito (frequência de defaults × severidade) por três vias, a recursão de Panjer, a FFT e o Monte Carlo, calibradas em dado público do Banco Central, e compara as três numa grade fatorial de cenários.
 
