@@ -27,7 +27,6 @@ onde P_N é a função geradora de probabilidade da frequência e (a,b) dependem
 
 `test_sanity.jl` roda um cenário único como checagem rápida de consistência entre Panjer, FFT e Monte Carlo antes de qualquer execução mais longa.
 
-`make_figures.py` e `capture_table.py` são utilitários em Python (matplotlib e Selenium) que geram as figuras e as tabelas em PNG usadas no artigo a partir dos CSVs em `data/output/`. Não fazem parte do pipeline de cálculo.
 
 ## Como reproduzir
 
