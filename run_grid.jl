@@ -9,7 +9,8 @@
 # Severidade: lognormal, média normalizada em 1 unidade de perda, CV
 # ancorado no WP193 do BCB (ver calibrate_severity.jl). Frequência: Poisson e
 # binomial negativa com dispersão r calibrada na heterogeneidade setorial do
-# SCR.data (ver calibrate_frequency.jl).
+# SCR.data, mediana da série anual 2012-2025 (ver
+# calibrate_frequency_multiyear.jl).
 #
 # Domínio de discretização: E[S] + 15·SD(S) (fórmulas de momento do
 # composto), dimensionado por cenário (E[N], frequência, CV), ANTES de
@@ -33,7 +34,7 @@ end
 const EN_GRID = [1.0, 10.0, 100.0, 1000.0]
 const CV_GRID = [("baixo", 0.1619), ("medio", 0.3237), ("alto", 0.6475)]
 const M_GRID = [100, 1000, 10000]
-const NB_R = 0.72  # calibrado em calibrate_frequency.jl (média de 4 trimestres de 2025)
+const NB_R = 0.542  # mediana anual 2012-2025, calibrate_frequency_multiyear.jl
 const ALPHA = 0.999
 const P_LOWER_KS = 0.99
 

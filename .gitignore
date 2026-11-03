@@ -1,2 +1,6 @@
 data/raw/*.csv
 *.cov
+
+# scripts de geração do artigo e notas internas (não públicos)
+*.py
+RESULTADOS.md
